@@ -298,7 +298,7 @@ footer {
     flex-direction: column;
 }
 
-.external__link a {
+.external__link ol li a, .external__link ol li  {
     font-size: 1.6rem;
     font-weight: 300 !important;
     text-align: center;
@@ -313,8 +313,10 @@ footer {
     grid-gap: 16px;
     grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
 }
-
-.external__link a:hover {
+.external__link ol li {
+    list-style: none;
+}
+.external__link ol li a:hover {
     color: var(--Lime-Green);
 }
 
@@ -324,18 +326,20 @@ header ol {
     margin: 0;
 }
 
-header .links ol li a {
+.hidden-list a {
     font-size: var(--Font-size);
     margin-left: 16px;
     margin: auto;
 }
-
+ol {
+    padding: 0;
+}
 .links,
 header button {
     display: none !important;
 }
 
-ol li {
+.hidden-list {
     position: relative;
     display: flex;
     align-items: center;
@@ -344,7 +348,7 @@ ol li {
     cursor: pointer;
 }
 
-ol li:hover .link-hover {
+.hidden-list:hover .link-hover {
     position: absolute;
     bottom: 0;
     height: 2px;
@@ -455,7 +459,7 @@ ol li:hover .link-hover {
         margin: 0;
     }
 
-    .external__link a {
+    .external__link ol li a, .external__link ol li {
         text-align: left;
     }
 
@@ -464,7 +468,7 @@ ol li:hover .link-hover {
         flex-direction: column;
     }
 
-    .external__link a:nth-child(1) {
+    .external__link ol li a:nth-child(1) {
         margin: 0;
     }
 
