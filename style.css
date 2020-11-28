@@ -16,12 +16,15 @@
     --White: hsl(0, 0%, 100%);
 
     --Font-size: 1.8rem;
-    --Button-font-size: 1.6rem;
+    --Button-font-size: 1.4rem;
     --Button-background-color: linear-gradient(270deg, #2BB7DA -14.09%, #31D35C 100%);
 }
 
 html {
     overflow-x: hidden !important;
+}
+.style__container {
+    position: relative;
 }
 
 body {
@@ -41,8 +44,8 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
-    padding: 16px;
+    height: 72px;
+    padding: 0 16px;
     background: white;
     z-index: 99;
 }
@@ -119,12 +122,15 @@ main,
 }
 
 h1 {
-    font-size: 4.8rem;
+    font-size: 5.6rem;
     text-align: center;
     font-family: 'Public Sans', sans-serif;
     color: #484754;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0;
+    line-height: 66px;
+    letter-spacing: -0.019em;
+
 }
 
 .main-para {
@@ -150,7 +156,7 @@ p {
 }
 
 section {
-    padding: 40px 16px;
+    padding: 80px 16px;
 }
 
 section>p {
@@ -178,7 +184,9 @@ button {
     background: var(--Button-background-color);
     border-radius: 40px;
     border-width: 0;
-    padding: 16px 32px;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 148px;
     margin: 40px auto 120px auto;
     transition: background 400ms;
     cursor: pointer;
@@ -190,26 +198,61 @@ button:hover {
 
 h2 {
     font-size: 4rem;
+    line-height: 47px;
+    letter-spacing: -0.02em;
     text-align: center;
     color: #4B4B53;
+}
+
+.articles {
+    padding: 0 16px;
+    margin: 80px 0;
 }
 
 .topic {
     margin: 0 0 32px 0;
 }
 
+h4 {
+    font-family: Public Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
+
 h3 {
-    font-size: 3.2rem;
+    font-size: 4rem;
+    line-height: 47px;
+    letter-spacing: -0.03em;
+    text-align: left;
     color: #4B4B53;
     width: fit-content;
     margin: 24px auto;
 }
 
-h4 {
-    font-size: 2.8rem;
+h5 {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
     color: #4B4B53;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
     transition: color 400ms;
+}
+
+.post .info {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
 }
 
 .card {
@@ -221,27 +264,28 @@ div img {
     width: 100%;
 }
 
-.card__item {
-    margin-top: 24px;
-    margin: auto;
-}
-
 .author {
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    text-align: left;
     margin-bottom: 8px;
-    font-size: 1.4rem;
 }
 
 .post {
     background: var(--White);
-    padding: 16px;
+    padding: 24px;
 }
 
 .post__image {
-    height: 240px !important;
+    height: 200px;
     object-fit: cover;
 }
 
-h4:hover {
+h5:hover {
     color: var(--Lime-Green);
 }
 
@@ -298,8 +342,9 @@ footer {
     flex-direction: column;
 }
 
-.external__link ol li a, .external__link ol li  {
-    font-size: 1.6rem;
+.external__link ol li a,
+.external__link ol li {
+    font-size: 1.4rem;
     font-weight: 300 !important;
     text-align: center;
     margin-top: 16px;
@@ -313,9 +358,11 @@ footer {
     grid-gap: 16px;
     grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
 }
+
 .external__link ol li {
     list-style: none;
 }
+
 .external__link ol li a:hover {
     color: var(--Lime-Green);
 }
@@ -327,13 +374,15 @@ header ol {
 }
 
 .hidden-list a {
-    font-size: var(--Font-size);
+    font-size: 1.4rem;
     margin-left: 16px;
     margin: auto;
 }
+
 ol {
     padding: 0;
 }
+
 .links,
 header button {
     display: none !important;
@@ -343,7 +392,7 @@ header button {
     position: relative;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 72px;
     width: 80px;
     cursor: pointer;
 }
@@ -387,10 +436,6 @@ header button {
         overflow-x: hidden;
     }
 
-    #nav__header {
-        padding: 24px;
-    }
-
     section div svg {
         margin: 0;
     }
@@ -412,9 +457,13 @@ header button {
 
     .card__container {
         display: grid;
-        grid-gap: 16px;
-        gap: 16px;
-        grid-template-columns: repeat(auto-fill, minmax(273px, 1fr));
+        grid-gap: 32px;
+        gap: 32px;
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    }
+
+    h4 {
+        text-align: left;
     }
 
     #nav__footer {
@@ -459,7 +508,8 @@ header button {
         margin: 0;
     }
 
-    .external__link ol li a, .external__link ol li {
+    .external__link ol li a,
+    .external__link ol li {
         text-align: left;
     }
 
@@ -506,21 +556,19 @@ header button {
         width: 80%;
         top: -200px !important;
         right: -280px !important;
-        overflow: clip;
+        overflow: hidden;
 
     }
 
     .child {
         position: absolute;
-        top: -60px;
-        right: -100px;
-        /* min-width: 400px;
-        max-width: 900px; */
-        /* width: calc(100vw - 600px); */
-        width: 60%;
+        top: -200px;
+        right: -500px;
+        width: 90%;
     }
 
     .main {
+        position: relative;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -534,6 +582,7 @@ header button {
     h2,
     h3,
     h4,
+    h5,
     p {
         text-align: left !important;
         margin-left: 0;
@@ -549,7 +598,7 @@ header button {
     }
 
     h1 {
-        width: 380px;
+        max-width: 440px;
     }
 
     button {
