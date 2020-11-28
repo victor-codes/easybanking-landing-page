@@ -16,7 +16,7 @@
     --White: hsl(0, 0%, 100%);
 
     --Font-size: 1.8rem;
-    --Button-font-size: 1.4rem;
+    --Button-font-size: 1.6rem;
     --Button-background-color: linear-gradient(270deg, #2BB7DA -14.09%, #31D35C 100%);
 }
 
@@ -214,8 +214,7 @@ h2 {
 }
 
 h4 {
-    font-family: Public Sans;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
@@ -344,7 +343,7 @@ footer {
 
 .external__link ol li a,
 .external__link ol li {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300 !important;
     text-align: center;
     margin-top: 16px;
@@ -374,7 +373,7 @@ header ol {
 }
 
 .hidden-list a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-left: 16px;
     margin: auto;
 }
