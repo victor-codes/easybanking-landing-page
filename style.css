@@ -9,12 +9,10 @@
     --Dark-Blue: hsl(233, 26%, 24%);
     --Lime-Green: hsl(136, 65%, 51%);
     --Bright-Cyan: hsl(192, 70%, 51%);
-
     --Grayish-Blue: hsl(233, 8%, 62%);
     --Light-Grayish-Blue: hsl(220, 16%, 96%);
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
-
     --Font-size: 1.8rem;
     --Button-font-size: 1.6rem;
     --Button-background-color: linear-gradient(270deg, #2BB7DA -14.09%, #31D35C 100%);
@@ -110,7 +108,6 @@ ul li {
 .mobile {
     width: 100%;
 }
-
 
 main,
 .main {
@@ -420,8 +417,8 @@ header button {
 
 .card__container {
     display: grid;
-    grid-gap: 16px;
-    gap: 16px;
+    grid-gap: 32px;
+    gap: 32px;
 }
 
 @media only screen and (max-width: 380px) {
@@ -455,9 +452,6 @@ header button {
     }
 
     .card__container {
-        display: grid;
-        grid-gap: 32px;
-        gap: 32px;
         grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
     }
 
